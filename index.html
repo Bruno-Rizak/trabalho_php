@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" tipe="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -10,7 +10,7 @@
   <body>
     <div class="container_form">
       <h1>Formulário de Cadastro</h1>
-        <form class="form" action="/php/Processa_dados.php" method="POST">               
+        <form class="form" action="processa_dados.php" method="POST">               
           <div class="form_grupo">
             <label for="nome" class="form_label">Nome</label>
             <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
@@ -51,32 +51,32 @@
           <div class="form_grupo">
             <span class="Idioma">Idioma ?</span>
             <div class="check-btn">
-              <input type="checkbox" class="form_new_input" id="ingles" name="ingles" value="ingles">
+              <input type="checkbox" class="form_new_input" id="ingles" name="idioma" value="ingles">
               <label for="ingles" class="form_label check_label"> <span class="check_new_btn"></span> Inglês</label>
             </div>
             <div class="check-btn">
-              <input type="checkbox" class="form_new_input" id="Espanhol" name="espanhol" value="Espanhol">
+              <input type="checkbox" class="form_new_input" id="Espanhol" name="idioma" value="Espanhol">
               <label for="Espanhol" class="form_label check_label"><span class="check_new_btn"></span>Espanhol</label>
             </div>
             <div class="check-btn">
-              <input type="checkbox" class="form_new_input" id="frances" name="frances" value="frances">
+              <input type="checkbox" class="form_new_input" id="frances" name="idioma" value="frances">
               <label for="frances" class="form_label check_label"><span class="check_new_btn"></span> Francês</label>
             </div>
             <div class="check-btn" >
-              <input type="checkbox" class="form_new_input" id="alemao" name="alemao" value="alemao">
+              <input type="checkbox" class="form_new_input" id="alemao" name="idioma" value="alemao">
               <label for="alemao" class="form_label check_label"><span class="check_new_btn"></span> Alemão</label>
             </div>
           </div>
           <div>
             <label for="data_de_inicio" class="form_label">Data de Inicio</label>
-            <input type="date" name="data_de_inicio" class="form_input" id="data_de_inicio" placeholder="Data de Inicio" required>
+            <input type="date" name="datadeinicio" class="form_input" id="datadeinicio" placeholder="Data de Inicio" required>
           </div>  
           <div>
             <label for="foto" class="submit_btn">Cole sua foto aqui</label>
             <input type="file" id="foto" name="foto">
           </div>
           <div class="submit">
-            <input type="hidden" name="Cadastrar" value="enviar">
+            <input type="hidden" name="cadastrar" value="enviar">
             <button type="submit" name="cadastrar" class="submit_btn" >Cadastrar</button>          
           </div>
         </form>
